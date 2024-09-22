@@ -38,13 +38,14 @@ header {
 }
 
 nav a {
-    margin: 10px;
+    margin: 30px;
     padding: 20px 20px;
     background-color: #E75D02;
     color: #ffffff;
     border-radius: 5px;
     text-decoration: none;
     text-align: center;
+    position: relative;
 }
 
 nav a:hover {
@@ -71,11 +72,13 @@ nav a:hover {
 
 .overlay {
     position: absolute;
+    bottom: 120px;
+    top: 120px;
     background: rgba(0, 0, 0, 0.5);
     color: white;
     width: 100%;
     text-align: center;
-    padding: 10px;
+    padding: 20px;
     font-size: 1.2em;
 }
 
