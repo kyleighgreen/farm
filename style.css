@@ -1,54 +1,141 @@
 /* -------------------- IMPORTED FONTS -------------------------------------- */
 @import url('https://fonts.googleapis.com/css2?family=Habibi&family=Irish+Grover&display=swap');
 
-/*-------------------- CSS RESET ---------------------------------------------------*/
-/* -------------------- ROOT VARIABLES --------------------------------------- */
-#VeggiePics,
-#FruitPics {
-    display: grid;
 
+/* -------------------- CSS RESET ------------------------------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* --------------------GLOBAL STYLES (mobile first/small) --------------------*/
-html {
+/* -------------------- ROOT VARIABLES -------------------------------------- */
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #2ecc71;
+    --text-color: #333;
+    --font-family: 'Irish-Grover', Habibi;
+}
+
+/* --------------------GLOBAL STYLES (mobile first/small) ------------------- */
+body {
+    font-family: Irish-Grover, Habibi;
+    line-height: 1.6;
     background-color: #ffffff;
 }
 
-img {
-    width: 100%;
-}
-
-h1 {
-    font-size: 2.5em;
-}
-
-h2 {
-    font-size: 1.75em;
-}
-
-h3,
-text {
-    font-size: 1.25em;
-}
-
-h1,
-h2,
-h3 {
-    font-family: "Irish Grover";
-}
-
+/* Header Styles */
 header {
+    font-family: Irish Grover;
     background-color: #06A816;
-    color: #ffffff;
+    color: white;
+    padding: 20px;
+    text-align: center;
 }
 
-@media screen and (min-width: 428px) {}
+nav a {
+    text-align: center;
+    margin: 75px;
+    padding: 10px 20px;
+    background-color: #E75D02;
+    color: #ffffff;
+    border-radius: 5px;
+    text-decoration: none;
+}
 
-/*-------------------- MEDIA QUERY (medium) --------------------------------*/
-@media screen and (min-width: 834px) {}
+header nav a:hover {
+    background-color: orange;
+}
 
-/*-------------------- MEDIA QUERY (large) ------------------------------------*/
-@media screen and (min-width: 1280px) {}
+/* Gallery Styles */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin: 20px;
+}
 
-/*-------------------- MEDIA QUERY (xl) ---------------------------------------*/
-@media screen and (min-width: 1440px) {}
+.gallery .item {
+    background-image: url;
+    position: relative;
+}
+
+.gallery .item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    font-size: 1.2em;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #06A816;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+footer div {
+    margin: 10px;
+}
+
+footer p {
+    margin-top: 20px;
+}
+
+aside {
+    text-align: center;
+    color: #06A816;
+}
+
+
+/* Back to Top Button */
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    background-color: #E75D02;
+    color: white;
+    text-decoration: none;
+
+}
+
+/* -------------------- MEDIA QUERY (medium) ------------------------------- */
+@media (min-width: 834px) {
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* -------------------- MEDIA QUERY (large) -------------------------------- */
+@media (min-width: 1280px) {
+    .gallery {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* -------------------- MEDIA QUERY (xl) ------------------------------------ */
+@media (min-width: 1440px) {
+    header {
+        padding: 40px;
+    }
+
+    footer {
+        padding: 40px;
+    }
+}
