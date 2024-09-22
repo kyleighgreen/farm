@@ -3,7 +3,11 @@
 
 /*-------------------- CSS RESET ---------------------------------------------------*/
 /* -------------------- ROOT VARIABLES --------------------------------------- */
+VeggiePics,
+FruitPics {
+    display: grid;
 
+}
 
 /* --------------------GLOBAL STYLES (mobile first/small) --------------------*/
 h1 {
@@ -27,6 +31,7 @@ h3 {
 
 header {
     background-color: #06A816;
+    color: #ffffff;
 }
 
 @media screen and (min-width: 428px) {}
