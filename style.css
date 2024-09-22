@@ -11,9 +11,9 @@
 
 /* -------------------- ROOT VARIABLES -------------------------------------- */
 :root {
-    --primary-color: #3498db;
-    --secondary-color: #2ecc71;
-    --text-color: #333;
+    --primary-color: #ffffff;
+    --secondary-color: #06A816;
+    --text-color: #E75D02;
     --font-family: 'Irish-Grover', Habibi;
 }
 
@@ -47,7 +47,7 @@ header nav a:hover {
     background-color: orange;
 }
 
-/* Gallery Styles */
+
 .gallery {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
