@@ -22,9 +22,13 @@ body {
     font-family: Irish-Grover, Habibi;
     line-height: 1.6;
     background-color: #ffffff;
+    text-align: center;
 }
 
-/* Header Styles */
+h1 {
+    text-shadow: 3px 3px 3px black;
+}
+
 header {
     font-family: Irish Grover;
     background-color: #06A816;
@@ -35,15 +39,16 @@ header {
 
 nav a {
     text-align: center;
-    margin: 75px;
-    padding: 10px 20px;
+    margin: 10px;
+    padding: 20px 20px;
     background-color: #E75D02;
     color: #ffffff;
     border-radius: 5px;
     text-decoration: none;
+    justify-content: center;
 }
 
-header nav a:hover {
+nav a:hover {
     background-color: orange;
 }
 
