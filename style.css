@@ -3,13 +3,21 @@
 
 /*-------------------- CSS RESET ---------------------------------------------------*/
 /* -------------------- ROOT VARIABLES --------------------------------------- */
-VeggiePics,
-FruitPics {
+#VeggiePics,
+#FruitPics {
     display: grid;
 
 }
 
 /* --------------------GLOBAL STYLES (mobile first/small) --------------------*/
+html {
+    background-color: #ffffff;
+}
+
+img {
+    width: 100%;
+}
+
 h1 {
     font-size: 2.5em;
 }
